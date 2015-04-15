@@ -10,13 +10,24 @@
 	</head>
 	<body>
 
-		<button class="viceroy" data-viceroy-event-type="click" data-viceroy-event-data='{"key1": "val1", "key2": "val2"}'>Press me!</button>
+		<div><button class="x">Click me to fire an element using API!</button></div>
 
 		<!-- jQuery -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		
 		<!-- Viceroy library -->
 		<script type="text/javascript" src="http://viceroyserver.local/viceroy/vice-552e7d4aa25d9.js?secret=552e7d4aa25e5-VC-552e7d4aa25ec&debug=true"></script>
+
+		<script type="text/javascript">
+		$(document).on('ready', function(){
+			$('button.x').on('click', function(e){
+				viceroy.pushDataEvent({
+					x: 1,
+					y: 2
+				});
+			});
+		});
+		</script>
 
 	</body>
 </html>
