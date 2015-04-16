@@ -13,7 +13,7 @@ The steps to include viceroy are:
 ### Step 1
 Include the Viceroy Javascript file in your application. To do this, you need an account with us. Get your unique filename and secret by contacting [Digined](https://digined.com/) (details below).
 
-```
+```html
 <script type="text/javascript" src="https://viceroy.soda.social/viceroy/{{FILENAME_GOES_HERE}}?secret={{SECRET_GOES_HERE}}"></script>
 ```
 
