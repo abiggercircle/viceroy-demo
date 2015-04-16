@@ -82,9 +82,9 @@ window.viceroy.getDataLayer();
 
 ### Utility Functions
 
-* window.viceroy.parsePayload - parse your JSON string
-* window.viceroy.getEventList - list of all the events that are currently being listened to
-* window.viceroy.getMissedEvents - View all the events that are in the Queue
+* **window.viceroy.parsePayload** to parse your JSON string
+* **window.viceroy.getEventList** to list of all the events that are currently being listened to
+* **window.viceroy.getMissedEvents** to view all the events that are in the Queue
 
 ## Issues, Support and Authentication
 
