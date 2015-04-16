@@ -1,8 +1,8 @@
 # Viceroy JS Client
 
-Viceroy is the package for applications that run fully managed advertising with Digined. Using a few lines application developers, can integrate Google Tag Manager and various event tracking mechanisms. Each installation has a unique filename and secret. These credentials are mapped to GTM containers and other tracking pixels under the hood. 
+Viceroy is the package for applications that run fully managed advertising with [Digined](https://digined.com/) / [Soda](https://meetsoda.com/). Using a few lines, application developers can integrate [Google Tag Manager](https://www.google.com/tagmanager/) and various event tracking mechanisms with ease. Each installation has a unique filename and secret. These credentials are mapped to GTM containers and other tracking pixels under the hood. 
 
-There is also a queuing mechanism so that no events are missed. All events that occur before the load of the GTM snippet are queued and fired when the GTM is loaded.
+Viceroy has a smart mechanism so that no events are ever missed. All events that occur before the load of the GTM snippet are queued and fired when the GTM is loaded.
 
 ## Integration of Viceroy
 
@@ -11,7 +11,7 @@ This repository contains various examples that demonstrate how Viceory can be ea
 The steps to include viceroy are:
 
 ### Step 1
-Include the Javascript file in your application. If you do not have this, get your unique filename and secret from Digined (details below).
+Include the Viceroy Javascript file in your application. To do this, you need an account with us. Get your unique filename and secret by contacting [Digined](https://digined.com/) (details below).
 
 ```
 <script type="text/javascript" src="https://viceroy.soda.social/viceroy/{{FILENAME_GOES_HERE}}?secret={{SECRET_GOES_HERE}}"></script>
@@ -34,9 +34,9 @@ Initialize Viceroy with the default data layer parameters.
 ```
 
 ### Step 3
-Set up the application events that Viceroy needs to track. There are two ways to track events:
+Set up the application events in your page that Viceroy needs to track. There are two ways to track events:
 
-##### Add a class and data attributes in the element you wish to track
+##### 1. Add a class and data attributes in the element you wish to track
 
 ```html
 <button class="viceroy" data-viceroy-event-type="click" data-viceroy-event-data='{"key1": "val1", "key2": "val2"}'>Press me!</button>
@@ -46,7 +46,7 @@ More info:
 * **data-viceroy-event-type** is the interaction on which the data will be pushed. Examples are click, hover, mousedown, mouseup, etc. There is an exhuaustive list of events available [here](http://www.w3.org/wiki/List_of_events).
 * **data-viceroy-event-data** is the data that needs to pushed on the event. Make sure the data is a valid JSON.
 
-##### Call Viceroy through a Javascript function call
+##### 2. Call Viceroy through a Javascript function call
 
 You can push data explicitly using
 ```javascript
