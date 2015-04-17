@@ -17,6 +17,12 @@ Include the Viceroy Javascript file in your application. To do this, you need an
 <script type="text/javascript" src="https://viceroy.soda.social/viceroy/{{FILENAME_GOES_HERE}}?secret={{SECRET_GOES_HERE}}"></script>
 ```
 
+If your application is not registered, you may use the sandbox mode for integration. Below is an example of including the Viceroy library in sandbox mode.
+
+```html
+<script type="text/javascript" src="https://viceroy.soda.social/viceroy/sandbox.js"></script>
+```
+
 ### Step 2
 Initialize Viceroy with the default data layer parameters.
 
@@ -43,7 +49,7 @@ Set up the application events in your page that Viceroy needs to track. There ar
 ```
 More info:
 * Add class **viceroy** to enable tracking on element
-* **data-viceroy-event-type** is the interaction on which the data will be pushed. Examples are click, hover, mousedown, mouseup, etc. There is an exhuaustive list of events available [here](http://www.w3.org/wiki/List_of_events).
+* **data-viceroy-event-type** is the interaction on which the data will be pushed. Examples are click, hover, mousedown, mouseup, etc. There is an exhaustive list of supported DOM events further in the documentation.
 * **data-viceroy-event-data** is the data that needs to pushed on the event. Make sure the data is a valid JSON.
 
 ##### 2. Call Viceroy through a Javascript function call
@@ -85,6 +91,89 @@ window.viceroy.getDataLayer();
 * **window.viceroy.parsePayload** to parse your JSON string
 * **window.viceroy.getEventList** to list of all the events that are currently being listened to
 * **window.viceroy.getMissedEvents** to view all the events that are in the Queue
+
+## List of supported DOM events
+
+* onautocompleteerror
+* onautocomplete
+* onwaiting
+* onvolumechange
+* ontoggle
+* ontimeupdate
+* onsuspend
+* onsubmit
+* onstalled
+* onshow
+* onselect
+* onseeking
+* onseeked
+* onscroll
+* onresize
+* onreset
+* onratechange
+* onprogress
+* onplaying
+* onplay
+* onpause
+* onmousewheel
+* onmouseup
+* onmouseover
+* onmouseout
+* onmousemove
+* onmouseleave
+* onmouseenter
+* onmousedown
+* onloadstart
+* onloadedmetadata
+* onloadeddata
+* onload
+* onkeyup
+* onkeypress
+* onkeydown
+* oninvalid
+* oninput
+* onfocus
+* onerror
+* onended
+* onemptied
+* ondurationchange
+* ondrop
+* ondragstart
+* ondragover
+* ondragleave
+* ondragenter
+* ondragend
+* ondrag
+* ondblclick
+* oncuechange
+* oncontextmenu
+* onclose
+* onclick
+* onchange
+* oncanplaythrough
+* oncanplay
+* oncancel
+* onblur
+* onabort
+* onwebkitfullscreenerror
+* onwebkitfullscreenchange
+* onwheel
+* onselectstart
+* onselectionchange
+* onsearch
+* onreadystatechange
+* onpointerlockerror
+* onpointerlockchange
+* onpaste
+* oncut
+* oncopy
+* onbeforepaste
+* onbeforecut
+* onbeforecopy
+* ontouchstart
+* ontouchend
+* ontouchmove
+* ontouchcancel
 
 ## Issues, Support and Authentication
 
