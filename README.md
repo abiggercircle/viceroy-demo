@@ -64,7 +64,7 @@ and check the data stack using
 window.viceroy.getDataLayer();
 ```
 
-#### :warning: THE ```viceroy-data-event-data``` PARAMETERS ARE PLACEHOLDERS. MAKE SURE YOU USE SOMETHING THAT MAKES  SENSE IN AN ACTUAL WORKING IMPLEMENTATION. PLEASE. :warning:
+:warning: **IMPORTANT** THE ```viceroy-data-event-data``` Paramaeters are placeholders. Please make sure that you use something that makes more sense in an actual implementation. 
 
 ## Advanced API usage
 
