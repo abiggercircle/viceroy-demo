@@ -72,6 +72,7 @@ window.viceroy.getDataLayer();
 
 ```javascript
   window.viceory = new Viceroy({
+        enabled         : 'true', // Set to 'false' to stop firing events
         defaults        : {},
         debug           : 'true', // Allows for debugging (logging/warnings/errors)
         element         : {
@@ -81,6 +82,8 @@ window.viceroy.getDataLayer();
         }
   });
 ```
+
+* **enabled** - ("true" or "false") This will switch on/off event firing.
 
 * **defaults** - the data parameters that are always sent when an event is fired.
 
@@ -93,6 +96,8 @@ window.viceroy.getDataLayer();
 * **window.viceroy.parsePayload** to parse your JSON string
 * **window.viceroy.getEventList** to list of all the events that are currently being listened to
 * **window.viceroy.getMissedEvents** to view all the events that are in the Queue
+* **window.viceroy.enable** to start firing events
+* **window.viceroy.disable** to stop firing events
 
 ## List of supported DOM events
 
