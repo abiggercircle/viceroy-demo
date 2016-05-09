@@ -45,7 +45,12 @@ Set up the application events in your page that Viceroy needs to track. There ar
 ##### 1. Add a class and data attributes in the element you wish to track
 
 ```html
-<button class="viceroy" data-viceroy-event-type="click" data-viceroy-event-data='{"key1": "val1", "key2": "val2"}'>Press me!</button>
+<button 
+   class="viceroy" 
+   data-viceroy-event-type="click" 
+   data-viceroy-event-data='{"key1": "val1", "key2": "val2"}'>
+   Press me!
+</button>
 ```
 More info:
 * Add class **viceroy** to enable tracking on element
